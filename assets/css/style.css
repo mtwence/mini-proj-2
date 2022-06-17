@@ -1,0 +1,23 @@
+body {
+  width: 100%;
+  height: 100;
+}
+header {
+  background-color: red;
+}
+.css_grid {
+  background-color: yellow;
+  display: flex;
+  justify-content: center;
+  /* flex: 1; */
+  flex-direction: row;
+
+  flex-wrap: wrap;
+  /* align-items: center; */
+}
+.card {
+  margin: 1rem;
+  background-color: green;
+  border-radius: 10px;
+  padding: 10px;
+}
