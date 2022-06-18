@@ -1,10 +1,28 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  --lightblue: #27c3c6;
+  --darkblue: #4069c5;
+  --purple: #8b00c9;
+}
 body {
   width: 100%;
   height: 100;
+  background-color: black;
 }
 header {
-  background-color: red;
+  /* background-color: red; */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  /* height: 100%; */
 }
+header h1 {
+  color: var(--lightblue);
+}
+
 .css_grid {
   display: flex;
   flex-wrap: wrap;
@@ -24,7 +42,31 @@ header {
   height: 600px;
   
 }
+  /* flex-direction: column;
+  grid-template-columns: repeat(4, 1fr); */
+  /* #4069c5 */
+}
+.card:hover {
+  box-shadow: 0 0 15px var(--lightblue);
+  /* transition: ; */
+}
+.card code {
+  background: linear-gradient(var(--lightblue), var(--darkblue), var(--purple));
+  /* width: 100%; */
+  padding: 10px;
+  border-radius: 8px;
+  /* border: 1px solid transparent; */
+}
 
+
+footer {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Messed around with queries, using width to force boxes to flex seems to work, things are adjusting well on my screen at least */
 @media screen and (max-width: 992px) {
   .card{
       width: 35%;
