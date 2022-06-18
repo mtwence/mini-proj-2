@@ -6,33 +6,32 @@ header {
   background-color: red;
 }
 .css_grid {
-  background-color: yellow;
   display: flex;
-  /* flex: 1; */
-  flex-direction: row;
-  margin: 20rem;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content:center;
+  justify-content: space-evenly;
+
 }
 .card {
-  /* align-items: center;
-  justify-content: center; */ 
   background-color: green;
   border-radius: 10px;
-  padding: 10px;
-  width: 500px;
-  height: 500px;
-  margin:10px ;
+  border: 3px dashed white;
+  display: flex;
   flex-direction: column;
-}
-
-@media screen and (max-width:992px) {
-  .card{
-    width: 400px;
-    height: 400px;
-  }
-
-
+  justify-content: space-around;
+  margin: 10px ;
+  padding: 20px;
+  width: 30%;
+  height: 600px;
   
 }
+
+@media screen and (max-width: 992px) {
+  .card{
+      width: 35%;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .card{
+      width: 50%;
+  }
